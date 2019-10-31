@@ -53,6 +53,9 @@ clean-test: ## remove test and coverage artifacts
 lint: ## check style with flake8
 	flake8 deadend_detector tests
 
+black: ## check style with flake8
+	black deadend_detector tests
+
 test: ## run tests quickly with the default Python
 	pytest
 
